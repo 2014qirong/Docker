@@ -1,0 +1,10 @@
+rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
+yum --enablerepo=elrepo-kernel install  kernel-ml-devel kernel-ml -y
+[root@iZ25x4ab3lrZ ~]# uname -r
+4.8.10-1.el7.elrepo.x86_64
+[root@iZ25x4ab3lrZ ~]# awk -F\' '$1=="menuentry " {print $2}' /etc/grub2.cfg
+CentOS Linux (4.8.10-1.el7.elrepo.x86_64) 7 (Core)
+CentOS Linux (0-rescue-7d26c16f128042a684ea474c9e2c240f) 7 (Core)
+grub2-set-default 0
+reboot
