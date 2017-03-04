@@ -7,4 +7,5 @@ yum --enablerepo=elrepo-kernel install  kernel-ml-devel kernel-ml -y
 CentOS Linux (4.8.10-1.el7.elrepo.x86_64) 7 (Core)
 CentOS Linux (0-rescue-7d26c16f128042a684ea474c9e2c240f) 7 (Core)
 grub2-set-default 0
+grub2-set-default 'CentOS Linux (4.8.5-1.el7.elrepo.x86_64) 7 (Core)'
 reboot
